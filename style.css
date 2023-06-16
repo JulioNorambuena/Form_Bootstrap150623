@@ -1,0 +1,58 @@
+
+
+h1 {
+    background-color:rgb(236, 236, 236)
+}
+
+#Card-Number {
+    width: 100%;
+}
+
+#CVC {
+    width: 100%;
+}
+
+#Amount {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#First-Name {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Last-Name {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#City {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#State {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#Postal-Code {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Cuadro-Pago {
+    background-color: grey;
+    border-radius: 3px;
+    display: flex;
+    justify-content:space-around;
+    color: white;
+    padding: 10px;
+
+}
+/*
+#Message {
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"
+        defer></script>
+    <script src="https://kit.fontawesome.com/f10b16016f.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body style="height: 100vh; display: flex; align-items: center;">
+    <div class="container-fluid m-2 h-75">
+        <div class="row h-75">
+            <div class="col-12">
+                <h1 class="py-3">Payment Form Example</h1>
+            </div>
+            <div class="col-12">
+                <div class="alert alert-danger" role="alert">
+                    Some Fields are missing
+                </div>
+            </div>
+
+            <!-- Primera Fila-->
+
+            <!--Card Number-->
+            <div class="col-5">
+
+                <label for="Card-Number">Card #</label>
+
+
+                <Input type="tel" id="Card-Number" inputmode="numeric" maxlenght="16"
+                    placeholder="XXXX XXXX XXXX XXXX"></Input>
+
+            </div>
+            <!--CVC Number-->
+            <div class="col-3">
+                <label for="CVC">CVC #</label>
+
+
+                <Input type="tel" id="CVC" inputmode="numeric" maxlenght="4" placeholder="XXXX"></Input>
+
+            </div>
+
+            <!--Amount-->
+            <div class="col-4">
+                <label for="Amount" class="w-100">Amount</label>
+                $<Input class="d-flex inline-block" type="tel" id="Amount" inputmode="numeric"
+                    placeholder="XXXX"></Input>
+            </div>
+
+            <!--Segunda fila Formulario-->
+
+
+            <!--First Name-->
+            <div class="col-6">
+                <label for="First-Name">First Name</label>
+                <Input type="text" id="First-Name"></Input>
+            </div>
+
+            <!--Last Name-->
+            <div class="col-6">
+                <label for="Last-Name">Last Name</label>
+                <Input type="text" id="Last-Name"></Input>
+            </div>
+
+            <!-- Tercera Fila-->
+
+            <!--City-->
+            <div class="col-6">
+                <label for="City">City</label>
+                <Input type="text" id="City"></Input>
+            </div>
+
+            <!--State-->
+            <div class="col-3">
+
+                <label for="State">State</label>
+                <select name="Estados" id="State">
+                    <option value="California">California</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="Nevada">Nevada</option>
+                </select>
+
+            </div>
+
+
+            <!--Postal Code-->
+            <div class="col-3">
+                <label for="Postal-Code">Postal Code</label>
+                <Input type="text" id="Postal-Code"></Input>
+            </div>
+            <!--Cuarta fila Formulario-->
+
+            <!--Métodos Pago-->
+            <div class="col-6">
+                <label for="We-Accept">We accept:</label>
+                <div class="w-50 Cuadro-Pago d-flex justify-content-around">
+                    <div>
+                        <input type="radio" name="Metodo-Pago" value="Master-Card"><label>&nbsp;<i
+                                class="fa-brands fa-cc-mastercard"></i></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Metodo-Pago" value="VISA"><label>&nbsp;<i
+                                class="fa-brands fa-cc-visa"></i></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Metodo-Pago" value="Diners"><label>&nbsp;<i
+                                class="fa-brands fa-cc-diners-club"></i></label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Metodo-Pago" value="American-Express"><label>&nbsp;<i
+                                class="fa-brands fa-cc-amex"></i></label>
+                    </div>
+                </div>
+            </div>
+            <!--Message-->
+            <div class="col-6">
+                <div>
+                    <label for="Message">Message</label>
+                    <textarea class="w-100" name="Mensaje" id="Message" cols="100" rows="5"></textarea>
+                    <span style="font-size: 12px; margin-top: 0px;">Add any Notes here.</span>
+                </div>
+            </div>
+
+
+
+            <!--Footer-->
+
+            <div class="col-12 bg-light d-flex flex-row-reverse py-3">
+                <button type="button" class="btn btn-primary ms-1">Send</button>
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+</body>
